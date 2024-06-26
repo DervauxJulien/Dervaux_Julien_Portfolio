@@ -28,7 +28,6 @@
     </header>
 
     <main class="background">
-
         <section class="homepage">
             <img id="pp" class="profil-pic" src="./images/julien_pp_3d.png"
                 alt="Représentation de mon portrait réalisé en 3D">
@@ -40,12 +39,11 @@
 
         <!-- page ABOUTME -->
 
-        <div id="about" class="about-container">
-            <figure class="title">
-                <img src="images/logo/aboutme.png" alt="">
-            </figure><br><br><br>
-
-            <div id="block">
+        <section id="about" class="about-container">
+            <header class="header-logo">
+                <img src="images/logo/aboutme.png" alt="Représentation du logo aboutme">
+            </header>
+            <div class="block-about">
                 <h2>
                     Get to know me!
                     I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to
@@ -61,10 +59,11 @@
 
                     SQL Basics
                 </h2>
+            </div>
+            <div class="center">
+            <div class="block-about">
                 <div class="logo-container">
-                    <div class="">
-                        <h2>Hard skills</h2>
-                    </div>
+                    <h2>Hard skills</h2>
                     <img src="images/logo/reactjs.png" alt="">
                     <img src="images/logo/js.png" alt="">
                     <img src="images/logo/symfony.png" alt="">
@@ -77,14 +76,15 @@
                 </div>
             </div>
         </div>
+        </section>
 
         <!-- EXPERIENCE -->
 
         <section id="exp" class="exp-container">
-            <figure class="title">
+            <header class="header-logo">
                 <img src="images/logo/experience.png" alt="Représentation du logo 'Expérience'">
-            </figure>
-            <article class="row-content">
+            </header>
+            <div class="row-content">
                 <div class="exp-content">
                     <img class=logo-exp src="images/logo/LOGO-AFPA-VERT-PNG.png" alt="Représentation du logo de l'AFPA">
                     <div class="block">
@@ -93,6 +93,7 @@
                         <p>2024</p>
                     </div>
                 </div>
+                <div class="center">
                 <div class="logo-container">
                     <img src="images/logo/reactjs.png" alt="">
                     <img src="Images/logo/js.png" alt="">
@@ -104,7 +105,8 @@
                     <img src="images/logo/Github.png" alt="">
                     <img src="images/logo/figma.png" alt="">
                 </div>
-            </article>
+            </div>
+            </div>
             <article class="row-content">
                 <div class="exp-content">
                     <img class=logo-exp src="images/logo/LOGO-AFPA-VERT-PNG.png" alt="Représentation du logo de l'AFPA">
@@ -114,17 +116,18 @@
                         <p>2023/2024</p>
                     </div>
                 </div>
-                <div class="logo-container">
-                    <img src="images/logo/reactjs.png" alt="">
-                    <img src="Images/logo/js.png" alt="">
-                    <img src="images/logo/symfony.png" alt="">
-                    <img src="images/logo/php.png" alt="">
-                    <img src="images/logo/html.png" alt="">
-                    <img class="" src="images/logo/css.png" alt="">
-                    <img src="images/logo/bootstrap.png" alt="">
-                    <img src="images/logo/Github.png" alt="">
-                    <img src="images/logo/figma.png" alt="">
-                </div>
+                <div class="center">
+                    <div class="logo-container">
+                        <img src="images/logo/reactjs.png" alt="">
+                        <img src="Images/logo/js.png" alt="">
+                        <img src="images/logo/symfony.png" alt="">
+                        <img src="images/logo/php.png" alt="">
+                        <img src="images/logo/html.png" alt="">
+                        <img class="" src="images/logo/css.png" alt="">
+                        <img src="images/logo/bootstrap.png" alt="">
+                        <img src="images/logo/Github.png" alt="">
+                        <img src="images/logo/figma.png" alt="">
+                    </div>
             </article>
             <article class="row-content">
                 <div class="exp-content">
@@ -135,25 +138,26 @@
                         <p>septembre 2023</p>
                     </div>
                 </div>
-                <div class="logo-container">
-                    <img src="images/logo/reactjs.png" alt="">
-                    <img src="Images/logo/js.png" alt="">
-                    <img src="images/logo/symfony.png" alt="">
-                    <img src="images/logo/php.png" alt="">
-                    <img src="images/logo/html.png" alt="">
-                    <img class="" src="images/logo/css.png" alt="">
-                    <img src="images/logo/bootstrap.png" alt="">
-                    <img src="images/logo/Github.png" alt="">
-                    <img src="images/logo/figma.png" alt="">
-                </div>
+                <div class="center">
+                    <div class="logo-container">
+                        <img src="images/logo/reactjs.png" alt="">
+                        <img src="Images/logo/js.png" alt="">
+                        <img src="images/logo/symfony.png" alt="">
+                        <img src="images/logo/php.png" alt="">
+                        <img src="images/logo/html.png" alt="">
+                        <img class="" src="images/logo/css.png" alt="">
+                        <img src="images/logo/bootstrap.png" alt="">
+                        <img src="images/logo/Github.png" alt="">
+                        <img src="images/logo/figma.png" alt="">
+                    </div>
             </article>
         </section>
 
         <!--Page  PROJET-->
-        <div id="projet" class="containprojet">
-            <figure id="title">
+        <section id="projet" class="containprojet">
+            <header class="header-logo">
                 <img src="images/logo/Group 167.png" alt="">
-            </figure>
+            </header>
 
             <h2>Here you will find some of the personal and clients projects that I created with each project containing
                 its
@@ -202,8 +206,8 @@
 
                 </div>
             </div>
-        </div>
-        <!--Page  CONTACT (josh)-->
+        </section>
+        <!-- Page  CONTACT (josh)
         <div id="contact" class="containcontact">
             <div class="ImgTitre">
                 <img src="/images/logo/Contact.png" alt="">
@@ -242,7 +246,7 @@
                 <a href=""><img src="/images/logo/linkedin.png" alt="Linkedin logo"></a>
                 <a href=""><img src="/images/logo/Github.png" alt="Github logo" id="git"></a>
             </div>
-        </div>
+        </div> -->
     </main>
 
 

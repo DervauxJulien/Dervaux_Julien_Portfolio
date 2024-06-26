@@ -14,7 +14,7 @@ html {
 
 .background {
     position: relative;
-    height: 970px;
+    /* height: 100%; */
 }
 
 .background::before {
@@ -54,6 +54,12 @@ a {
 .hoverlink:hover {
     color: purple;
     transition: 300ms;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
 
 .homepage {
@@ -110,19 +116,16 @@ a {
     align-items: center;
 }
 
-#bang {
-    display: flex;
-    justify-content: space-between;
-}
 
 .about-container{
     min-height: 100%;
-    background-image: url(/Images/backgroundexperience.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 1080px;
     display: flex;
     flex-direction: column;
-    gap: 7%;
+    /* gap: 7%; */
+        /* background-image: url(/Images/backgroundexperience.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 
 }
 
@@ -162,9 +165,10 @@ a {
 
 .exp-container{
     min-height: 100%;
-    background-image: url(/Images/R.png);
     display: flex;
     flex-direction: column;
+    /* background-image: url(/Images/R.png); */
+
 }
 
 .title-container{
@@ -221,6 +225,14 @@ a {
 .block{
     display: flex;
     flex-direction: column;
+    width: auto;
+}
+.block-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px;
+    width: auto;
 }
 
 .exp-block h2 {
@@ -244,8 +256,7 @@ a {
 
 .logo-container{
     background-color: rgba(31, 38, 49, 0.7);
-    width: auto;
-    /* height: auto; */
+    width: 100%;
     border-radius: 35px;
     display: flex;
     justify-content: space-evenly;
@@ -255,6 +266,10 @@ a {
     gap: 20px;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+}
 /* .logo-exp{
     width: 60px;
     height: 60px;
@@ -263,10 +278,9 @@ a {
 /* CSSPROJET */
 
 .containprojet{
-    background-image: url(/Images/abstrait-design-low-poly.webp);
-    background-size: cover;
- 
-    height: 970px;
+    /* background-image: url(/Images/abstrait-design-low-poly.webp); */
+    /* background-size: cover; */
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     gap: 5%;
@@ -323,12 +337,14 @@ h2 {
       }
 
 #pr1 .derriere{
-    background-image: url(/Images/chatmelon.webp);
+    background-image: url(/Images/project/HomePage.png);
     background-size: 310px 500px;
 }
 #pr2 .derriere{
     background-image: url(/Images/stanislas.webp);
     background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
 }
 #pr3 .derriere{
     background-image: url(/Images/chatmelon.webp);
@@ -340,7 +356,7 @@ h2 {
 }
 #pr1 .devant{
 
-    background-image: url(/Images/DOFUSTURQUOISEOK.png);
+    background-image: url(/Images/project/HomePage.png);
     background-size: 310px 500px;
     background-size: cover;
     background-position-x: center;
@@ -466,7 +482,7 @@ textarea{
     padding-top: 1%;
 }
 
-/* Mobile Devices */
+/* Mobile Devices
 @media only screen and (max-width: 600px) {
     .backGround {
         height: auto;
@@ -483,7 +499,7 @@ textarea{
 }
 
 /* Tablets and Small Screens */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .backGround {
         height: 800px;
     }
@@ -499,12 +515,12 @@ textarea{
 
     .pageContainer h2 {
         font-size: 1.8em;
-    }
+    } */
 
     /* Add more styles for medium-sized screens */
-}
+ 
 
 /* Larger Screens (Desktops) */
-@media only screen and (min-width: 1025px) {
+/* @media only screen and (min-width: 1025px) {
     /* Keep the original styles for larger screens */
-}
+
