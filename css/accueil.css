@@ -1,0 +1,510 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+/* HOMEPAGE */
+
+.background {
+    position: relative;
+    height: 970px;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/Images/gif/4NB4.gif) center center no-repeat ;
+    background-size: cover;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+/* -------AJOUT DE NAVBAR FIXED------ */
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+}
+
+nav li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.hoverlink:hover {
+    color: purple;
+    transition: 300ms;
+}
+
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homepage h2 {
+    font-size: 2em;
+    color: rgb(175, 175, 175);
+}
+
+.profil-pic {
+    width: 60vh;
+    margin-top: 60px;
+}
+
+/* JS CLASSLIST */
+
+.navOver {
+    background-color: rgba(128, 128, 128, 0.161);
+    transition: 300ms;
+}
+
+/* CSS About Me */
+
+.title {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.image {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    
+
+}
+
+#text {
+    color: white;
+    padding-left: 7%;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#bang {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container{
+    min-height: 100%;
+    background-image: url(/Images/backgroundexperience.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    margin-right: 210px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 38, 49, 0.7);
+    border-radius: 7%;
+}
+
+#bleu {
+    padding-left: 16px;
+    
+}
+
+#orange {
+    padding-left: 10px;
+    
+}
+
+#jaune {
+    padding-left: 9px;
+}
+.imgabout{
+    margin-top: 40%;
+}
+
+
+
+/* EXPERIENCE */
+
+.exp-container{
+    min-height: 100%;
+    background-image: url(/Images/R.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 335px;
+    height: 110px;
+}
+
+
+.columncontain{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+   width: 100%;
+
+}
+
+.container-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-content{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: auto;
+}
+
+.txtexp{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 495px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.exp-content{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-block h2 {
+    padding-bottom: 20px;
+}
+.exp-block h3 {
+    color: white;
+    padding-bottom: 20px;
+}
+.exp-block p {
+    font-style: italic;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.logo-exp {
+    width: 20vw;
+    background-color: white;
+}
+
+
+.logo-container{
+    background-color: rgba(31, 38, 49, 0.7);
+    width: auto;
+    /* height: auto; */
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* .logo-exp{
+    width: 60px;
+    height: 60px;
+} */
+
+/* CSSPROJET */
+
+.containprojet{
+    background-image: url(/Images/abstrait-design-low-poly.webp);
+    background-size: cover;
+ 
+    height: 970px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+h2 {
+    color: white;
+    display: flex;
+}
+
+.parent {
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    }
+
+    .fliprojet {
+        perspective: 1000px;
+        width: 15%;
+        height: 500px;
+        position: relative;
+      }
+    
+      .fliprojet .interieur {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+      }
+    
+      .fliprojet:hover .interieur {
+        transform: rotateY(180deg);
+      }
+    
+      .fliprojet .devant,
+      .fliprojet .derriere {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        border-radius: 5%;
+      }
+    
+      .fliprojet .derriere {
+        transform: rotateY(180deg);
+      }
+
+#pr1 .derriere{
+    background-image: url(/Images/chatmelon.webp);
+    background-size: 310px 500px;
+}
+#pr2 .derriere{
+    background-image: url(/Images/stanislas.webp);
+    background-size: 310px 500px;
+}
+#pr3 .derriere{
+    background-image: url(/Images/chatmelon.webp);
+    background-size: 310px 500px;
+}
+#pr4 .derriere{
+    background-image: url(/Images/chatmelon.webp);
+    background-size: 310px 500px;
+}
+#pr1 .devant{
+
+    background-image: url(/Images/DOFUSTURQUOISEOK.png);
+    background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
+}
+#pr2 .devant{
+    background-image: url(/Images/DOFUSVULBIS6.png);
+    background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
+}
+#pr3 .devant{
+    background-image: url(/Images/DOFUSOCRE4.png);
+    background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
+}
+#pr4 .devant{
+    background-image: url(/Images/DOFUSEMERAUDEINCROYABLE.png);
+    background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+/* CSSCONTACT */
+.containcontact{
+    background-image: url(/Images/fond-developpement-web-violet_76964-167.webp);
+    background-size: contain;
+    height: 970px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+}
+.ImgTitre{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.BienCon{
+    /* background-color: aqua; */
+    padding-left: 7%;
+   font-size: large;
+   font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 80%;
+}
+
+.Nomasu{
+   display: flex;
+   flex-direction: column;
+    width: 30%;
+    height: 400px;
+
+    padding-left: 7%;
+    justify-content: center;
+}
+.renseignement{
+    height: 40px;
+}
+.textlab{
+ 
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding-top: 1.5%;
+}
+
+#Msg{
+
+    height: 250px;
+    width: 100%;
+}
+
+label{
+ 
+    font-weight: bold;
+    font-size: large;
+}
+.bouton{
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+     font-weight: bold;
+    border-radius: 2.2rem;
+    width: 20%;
+    height: 40px;
+
+}
+
+.reseaux{
+    display: flex;
+    padding-left: 7%;
+}
+
+form{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 80%;
+    height: 20px;
+}
+
+textarea{
+    width: 35%;
+}
+
+#git{
+    background-color: black;
+}
+
+.textlab{
+    padding-top: 1%;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .backGround {
+        height: auto;
+    }
+
+    .profilPic {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #animatedTitle {
+        font-size: 2em;
+    }
+}
+
+/* Tablets and Small Screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .backGround {
+        height: 800px;
+    }
+
+    .profilPic {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    #animatedTitle {
+        font-size: 2.5em;
+    }
+
+    .pageContainer h2 {
+        font-size: 1.8em;
+    }
+
+    /* Add more styles for medium-sized screens */
+}
+
+/* Larger Screens (Desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Keep the original styles for larger screens */
+}
