@@ -10,6 +10,23 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
 /* HOMEPAGE */
 .background {
     position: relative;
@@ -33,11 +50,11 @@ nav {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 nav ul {
@@ -46,7 +63,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 10px;
 }
 
 nav a {
@@ -77,6 +94,7 @@ nav a {
 }
 
 /* Sections */
+
 .homepage, .about-container, .exp-container, .containprojet {
     min-height: 100vh;
     display: flex;
@@ -101,38 +119,68 @@ nav a {
 }
 
 /* About section */
-.block-about p {
+.block-about {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
     color: white;
     font-size: 1.2em;
 }
 
+.block{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Experience section */
-.row-content {
+.card-container {
+
     background-color: rgb(0, 0, 0);
-    border: 1px solid white;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
     margin: 20px;
     padding: 20px;
+    width: auto;
+    height: auto;
+}
+
+.card-content{
+    border-radius: 20px;
+}
+
+.card-container:hover{
+    border: 1px solid white;
 }
 
 .logo-exp {
     width: 20vw;
     background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.hard-skills{
+    background-color: rgba(31, 38, 49, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+
 }
 
 .logo-container {
     background-color: rgba(31, 38, 49, 0.7);
-    width: 100%;
-    border-radius: 35px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     padding: 20px;
     gap: 20px;
+    border-radius: 0 0 20px 20px;
 }
 
 /* Project section */
@@ -144,21 +192,49 @@ nav a {
 }
 
 /* Logo hover effect */
-.logo-container img {
+.hard-skills img {
     transition: transform 0.3s ease;
 }
 
-.logo-container img:hover {
+.hard-skills img:hover {
     transform: scale(1.1);
 }
 
-/* Media queries for responsiveness */
+.techno{
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.techno-container{
+    display: flex;
+}
+
+.logo-container a {
+    border-radius: 20px;
+    background-color: #FF923E;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+#react {
+    background-color: #FFB800;
+}
+#api {
+    background-color: #CA49F8;
+}
+
+/* Media queries pour le responsive */
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
         background-color: rgba(0, 0, 0, 0.7);
     }
 
