@@ -54,6 +54,16 @@ navbar.style.opacity = '0';
 
 navbar.style.transition = 'opacity 0.5s ease-in-out';
 
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('nav ul');
+
+  burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+  });
+});
+
+
 // // -------------TEXT APPARAIT FUR ET A MESURE----------
 
 // const titleElement = document.getElementById('animatedTitle');
