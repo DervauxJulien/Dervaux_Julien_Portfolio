@@ -54,14 +54,17 @@ navbar.style.opacity = '0';
 
 navbar.style.transition = 'opacity 0.5s ease-in-out';
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
-  const nav = document.querySelector('nav ul');
+  const navUl = document.querySelector('nav ul');
 
   burger.addEventListener('click', () => {
-      nav.classList.toggle('show');
+      navUl.classList.toggle('active');
+      burger.classList.toggle('active');
   });
 });
+
+
 
 
 // // -------------TEXT APPARAIT FUR ET A MESURE----------

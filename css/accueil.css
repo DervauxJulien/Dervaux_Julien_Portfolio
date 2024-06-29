@@ -2,12 +2,28 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 html {
     background-color: black;
     scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
@@ -18,7 +34,10 @@ h1 {
 h2 {
     color: white;
     font-size: 2rem;
-    display: flex;
+}
+
+h3 {
+    color: white;
 }
 
 p {
@@ -26,10 +45,10 @@ p {
     font-size: 1.5rem;
 }
 
-
 /* HOMEPAGE */
 .background {
     position: relative;
+    width: 100%;
 }
 
 .background::before {
@@ -48,6 +67,8 @@ p {
 /* Navbar */
 nav {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -59,16 +80,19 @@ nav {
 
 nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    margin: 10px;
+    margin: 0 10px;
 }
 
 nav a {
     text-decoration: none;
-    list-style: none;
     color: white;
     font-size: 1.5rem;
     padding: 20px;
@@ -94,14 +118,17 @@ nav a {
 }
 
 /* Sections */
-
-.homepage, .about-container, .exp-container, .containprojet {
+.homepage,
+.about-container,
+.exp-container,
+.containprojet {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 .homepage h2 {
@@ -122,20 +149,22 @@ nav a {
 .block-about {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
     padding: 50px;
     color: white;
     font-size: 1.2em;
 }
 
-.block{
+.block {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Experience section */
 .card-container {
-
-    background-color: rgb(0, 0, 0);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -146,11 +175,11 @@ nav a {
     height: auto;
 }
 
-.card-content{
+.card-content {
     border-radius: 20px;
 }
 
-.card-container:hover{
+.card-container:hover {
     border: 1px solid white;
 }
 
@@ -160,7 +189,7 @@ nav a {
     border-radius: 20px 20px 0 0;
 }
 
-.hard-skills{
+.hard-skills {
     background-color: rgba(31, 38, 49, 0.7);
     display: flex;
     justify-content: center;
@@ -169,7 +198,6 @@ nav a {
     gap: 20px;
     border-radius: 25px;
     flex-wrap: wrap;
-
 }
 
 .logo-container {
@@ -178,6 +206,7 @@ nav a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
     gap: 20px;
     border-radius: 0 0 20px 20px;
@@ -200,15 +229,19 @@ nav a {
     transform: scale(1.1);
 }
 
-.techno{
+.techno {
     border-radius: 20px;
     color: rgb(255, 255, 255);
     padding: 10px;
     font-size: 1rem;
 }
 
-.techno-container{
+.techno-container {
     display: flex;
+}
+
+.techno-container img {
+    padding: 10px;
 }
 
 .logo-container a {
@@ -220,25 +253,52 @@ nav a {
     color: white;
 }
 
-#react {
-    background-color: #FFB800;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 38, 49, 0.7);
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 10px 0;
 }
-#api {
-    background-color: #CA49F8;
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    padding: 10px 30px;
+}
+
+footer a {
+    padding: 0 10px;
 }
 
 /* Media queries pour le responsive */
 
+/* Responsive Styles */
 @media (max-width: 768px) {
+
     nav ul {
         display: none;
         flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
         width: 100%;
-        /* text-align: center; */
-        background-color: rgba(0, 0, 0, 0.7);
+        top: 60px;
+        left: 0;
+        border-radius: 10px;
     }
 
-    nav ul.show {
+    nav ul.active {
         display: flex;
     }
 
@@ -246,7 +306,126 @@ nav a {
         display: flex;
     }
 
-    .homepage, .about-container, .exp-container, .containprojet {
-        padding: 20px;
+    .burger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .profil-pic {
+        width: 40vh;
+        margin-top: 30px;
+    }
+
+    .homepage h1 {
+        font-size: 3rem;
+    }
+
+    .homepage h2 {
+        font-size: 1.5rem;
+    }
+
+    .block-about p {
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+
+    .block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        margin: 1rem 0.5rem;
+        padding: 0.5rem;
+        width: 90%;
+    }
+
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-exp {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .logo-container h2,
+    .logo-container h3 {
+        font-size: 1rem;
+    }
+
+    .logo-container p {
+        font-size: 0.875rem;
+    }
+
+    .techno-container img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .profil-pic {
+        width: 30vh;
+        margin-top: 20px;
+    }
+
+    .homepage h1 {
+        font-size: 2.5rem;
+    }
+
+    .homepage h2 {
+        font-size: 1.25rem;
+    }
+
+    .block-about p {
+        font-size: 0.875rem;
+        margin: 0 0.5rem;
+    }
+
+    .block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-exp {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo-container h2,
+    .logo-container h3 {
+        font-size: 0.875rem;
+    }
+
+    .logo-container p {
+        font-size: 0.75rem;
+    }
+
+    .techno-container img {
+        width: 20px;
+        height: 20px;
     }
 }
